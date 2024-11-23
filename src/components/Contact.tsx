@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 export const Contact = () => {
     const [formData, setFormData] = useState({
         company: "",
@@ -30,7 +30,7 @@ export const Contact = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch("http://localhost:3000/api/send", {
+            const response = await fetch(`${baseUrl}/api/send`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
