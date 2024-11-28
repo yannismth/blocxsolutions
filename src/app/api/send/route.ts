@@ -19,7 +19,7 @@ export async function POST(req: Request) {
         // Envoi de l'email avec les informations utilisateur
         const emailData = await resend.emails.send({
             from: 'Acme <onboarding@resend.dev>', // Adresse vérifiée dans Resend
-            to: ['delivered@resend.dev'], // Adresse où vous recevez les emails
+            to: ['rmat67@icloud.com'], // Adresse où vous recevez les emails
             subject: `Nouvelle demande de contact de ${company || "un client"}`,
             react: EmailTemplate({
                 firstName: company || "Nom non spécifié",

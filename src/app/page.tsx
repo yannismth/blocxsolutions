@@ -15,15 +15,6 @@ export default function Home() {
       <meta name="description" content="Blocx est une solution modulaire innovante pour vos installations électriques et informatiques." />
     </Head>
     <Header />
-    <main>
-      <Hero />
-      <Transition />
-      <Benefits />
-      <Configurations />
-      <FAQ />
-      <Contact />
-      <Footer />
-    </main>
     </>
   )
 };
